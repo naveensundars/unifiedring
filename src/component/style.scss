@@ -1,0 +1,572 @@
+body {
+    margin: 0;
+    a {
+        text-decoration: none;
+    }
+    button {
+        cursor: pointer;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        padding: 32px 64px;
+        display: flex;
+        box-shadow: 0px 1px 5px #00000015;
+        position: relative;
+        z-index: 10;
+        div {
+            width: 50%;
+            &.headerRight {
+                display: flex;
+                justify-content: end;
+                img {
+                    width: 17.01px;
+                }
+                a {
+                    line-height: 45px;
+                    color: #000000;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    .HomePage {
+        .HomePageSlider {
+            background: url("../component/images/bgImage.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            .HomePageSliderContent {
+                max-width: 517px;
+                margin-left: auto;
+                padding: 85px 111px 111px 111px;
+                h1 {
+                    font: normal normal bold 58px/62px Acumin Pro;
+                    margin: 0;
+                }
+                .buttonGroup {
+                    margin-top: 57px;
+                    button {
+                        padding: 24px 57px;
+                        background: transparent;
+                        border-radius: 5px;
+                        text-align: center;
+                        &.transBtn {
+                            border: 2px solid #1660ea;
+                            background-color: #ffffff;
+                            color: #1660ea;
+                            margin-left: 24px;
+                        }
+                        &.colorBtn {
+                            background-color: #7c24ef;
+                            border: 2px solid #7c24ef;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+        .HomePageGridSection {
+            padding: 69px 0 0 0;
+            .HomePageGridSectionHead {
+                text-align: center;
+                max-width: 764px;
+                margin: auto;
+                h1 {
+                    font: normal normal bold 58px/64px Acumin Pro;
+                    margin: 0;
+                }
+                p {
+                    color: #1e1e1e;
+                }
+            }
+            .HomePageGridArea {
+                display: flex;
+                justify-content: center;
+                margin-top: 45px;
+                flex-wrap: wrap;
+                .divOuter {
+                    max-width: 376px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 25px;
+                    .divInner {
+                        padding: 44px 49px;
+                        border-radius: 18px;
+                        flex: 1;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                        h2 {
+                            font: normal normal bold 28px/36px Helvetica Now Text;
+                            margin: 0;
+                            margin-top: 33px;
+                        }
+                    }
+                    &:first-child {
+                        .divInner {
+                            background-color: #ecf3ff;
+                        }
+                    }
+                    &:nth-child(2) {
+                        padding: 0 26px;
+                        .divInner {
+                            background-color: #eef5f6;
+                        }
+                    }
+                    &:last-child {
+                        .divInner {
+                            background-color: #ecf1f7;
+                        }
+                    }
+                }
+            }
+        }
+        & + footer {
+            div {
+                width: 33.33%;
+                &.footerCenter {
+                    display: flex;
+                }
+            }
+        }
+    }
+    .PlanPage {
+        background: linear-gradient(#ecf3ff 21%, #ffffff 0%);
+        .planPageHeader {
+            h1 {
+                margin: 0;
+                padding-top: 61px;
+                text-align: center;
+            }
+            .planRangeArea {
+                display: flex;
+                justify-content: center;
+                margin-top: 58px;
+                .userSelect {
+                    display: flex;
+                    padding-right: 10%;
+                    p {
+                        color: #032c7e;
+                        font-size: 16px;
+                    }
+                    ul {
+                        list-style: none;
+                        margin-top: 8px;
+                        margin-left: 8px;
+                        background-color: #c8dcfd;
+                        border-radius: 22px;
+                        height: 37px;
+                        li {
+                            display: inline-block;
+                            padding: 9px 17px;
+                            color: #032c7e;
+                            cursor: pointer;
+                            font-size: 16px;
+                            &.active {
+                                border-radius: 22px;
+                                background-color: #1660ea;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+                .userSelectList {
+                    display: flex;
+                    p {
+                        color: #032c7e;
+                        font-size: 16px;
+                        margin-right: 8px;
+                    }
+                    ul {
+                        list-style: none;
+                        border-bottom: 1px solid #dae3f4;
+                        li {
+                            display: inline-block;
+                            padding: 13px 32px;
+                            font-size: 16px;
+                            &.active {
+                                border-bottom: 3px solid #1660ea;
+                                color: #1660ea;
+                            }
+                            &:last-child {
+                                padding-right: 0;
+                            }
+                            &:first-child {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .planGridArea {
+            display: flex;
+            justify-content: center;
+            padding-top: 84px;
+            flex-wrap: wrap;
+            .planGridAreaOuter {
+                margin: 8px;
+                border: 1px solid #d9d9d9;
+                border-radius: 12px;
+                background-color: #ffffff;
+                max-width: 304px;
+                width: 25%;
+                .planGridAreaInner {
+                    padding: 30px 32px;
+                    h3 {
+                        color: #1d76f2;
+                        font-size: 22px;
+                        margin: 0;
+                    }
+                    h4 {
+                        color: #1d76f2;
+                        text-transform: uppercase;
+                        font-size: 44px;
+                        margin: 0;
+                    }
+                    p {
+                        color: #0b0b0b;
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                    .buttonGroup {
+                        margin-top: 22px;
+                        text-align: center;
+                        button {
+                            width: 100%;
+                            height: 48px;
+                            border-radius: 4px;
+                            &.transBtn {
+                                border: 2px solid #e2ccff;
+                                background-color: #ffffff;
+                                color: #1660ea;
+                            }
+                            &.colorBtn {
+                                background-color: #1d76f2;
+                                border: 2px solid #1d76f2;
+                                color: #ffffff;
+                                margin-bottom: 5px;
+                            }
+                        }
+                        span {
+                            font-size: 10px;
+                            color: #706d75;
+                        }
+                    }
+                    .planGridAreaDetails {
+                        h5 {
+                            font-size: 15px;
+                            color: #000000;
+                        }
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #706d75;
+                            margin: 0;
+                        }
+                    }
+                    &.ProfessionalArea {
+                        // padding-top: 52px;
+                        h3 {
+                            color: #7c24ef;
+                        }
+                        h4 {
+                            color: #7c24ef;
+                        }
+                    }
+                }
+            }
+        }
+        .comparePlanArea {
+            h2 {
+                font: normal normal bold 38px/43px Acumin Pro;
+                text-align: center;
+            }
+            .comparePlanGroupOne {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                div {
+                    &.PlanQues {
+                        width: 20%;
+                        position: relative;
+                        p {
+                            font: normal normal 600 16px/22px Acumin Pro;
+                            margin: 0;
+                            position: absolute;
+                            bottom: 45px;
+                        }
+                    }
+                    &.btnAreaPlan {
+                        width: 17.03%;
+                        text-align: center;
+                        .buttonGroup {
+                            margin-top: 22px;
+                            text-align: center;
+                            padding: 0px 32px;
+                            button {
+                                width: 100%;
+                                height: 48px;
+                                border-radius: 4px;
+                                &.transBtn {
+                                    border: 2px solid #e2ccff;
+                                    background-color: #ffffff;
+                                    color: #1660ea;
+                                }
+                                &.colorBtn {
+                                    background-color: #1d76f2;
+                                    border: 2px solid #1d76f2;
+                                    color: #ffffff;
+                                    margin-bottom: 5px;
+                                }
+                            }
+                            span {
+                                font-size: 10px;
+                                color: #706d75;
+                            }
+                        }
+                    }
+                }
+            }
+            .comparePlanGroupGridOuter {
+                margin-top: 30px;
+                .comparePlanGroupGrid {
+                    display: flex;
+                    justify-content: center;
+                    div {
+                        &.noBorder {
+                            border-bottom: none;
+                        }
+                        border-bottom: 1px solid #e1e1e1;
+                        &:nth-child(odd) {
+                            background-color: #f4f7ff;
+                        }
+                        &:nth-child(even) {
+                            background-color: #ebf0fd;
+                        }
+                        &.comparePlanGroupGridMax {
+                            width: 20%;
+                            &.Heading {
+                                padding: 10px 0px;
+                                p {
+                                    font: normal normal 600 14px/20px Acumin Pro;
+                                    color: #032c7e;
+                                    text-transform: uppercase;
+                                    margin: 0;
+                                    padding: 10px 16px;
+                                }
+                                &.boderStyle {
+                                    border-top-left-radius: 25px;
+                                }
+                            }
+                            &.boderStyleBottom {
+                                border-bottom-left-radius: 25px;
+                            }
+                            p {
+                                font: normal normal 600 14px/20px Acumin Pro;
+                                color: #000;
+                                margin: 0;
+                                padding: 10px 16px;
+                            }
+                            h5 {
+                                margin: 0;
+                                padding-left: 16px;
+                                margin-top: 10px;
+                                font-weight: 600;
+                                & + p {
+                                    padding: 0 16px 8px 16px;
+                                }
+                            }
+                        }
+                        &.comparePlanGroupGridMin {
+                            width: 17%;
+                            p {
+                                margin: 0;
+                                padding: 10px 16px;
+                                font-size: 14px;
+                            }
+                            &.boderStyle {
+                                border-top-right-radius: 25px;
+                            }
+                            &.boderStyleBottom {
+                                border-bottom-right-radius: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        padding: 32px 64px;
+        margin-top: 66px;
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            width: 50%;
+            &.footerCenter {
+                display: none;
+                text-align: center;
+                p {
+                    color: #9b9b9b;
+                    font: normal normal 300 14px/20px Helvetica Now Text;
+                    letter-spacing: 0.28px;
+                }
+            }
+            &.footerRight {
+                text-align: center;
+                nav {
+                    margin-top: 8px;
+                    a {
+                        margin-right: 16px;
+                    }
+                }
+                .chartBtn {
+                    position: fixed;
+                    bottom: 46px;
+                    right: 64px;
+                    border: none;
+                    background: #1d76f2;
+                    border-radius: 50%;
+                    width: 59px;
+                    height: 59px;
+                }
+            }
+        }
+    }
+}
+
+/** media Querie **/
+body {
+    @media (max-width: 768px) {
+        header {
+            padding: 21px;
+            .headerLeft {
+                img {
+                    width: 165px;
+                }
+            }
+        }
+        .HomePage {
+            .HomePageSlider {
+                .HomePageSliderContent {
+                    text-align: center;
+                    margin-left: unset;
+                    padding: 27px 40px 89px 40px;
+                    h1 {
+                        font: normal normal bold 22px/25px Acumin Pro;
+                    }
+                    .buttonGroup {
+                        margin-top: 16px;
+                        button {
+                            padding: 0;
+                            background: transparent;
+                            border-radius: 5px;
+                            text-align: center;
+                            display: block;
+                            width: 122px;
+                            height: 38px;
+                            line-height: 38px;
+                            margin: 16px auto;
+                            &.transBtn {
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .HomePageGridSection {
+                padding: 0;
+                .HomePageGridSectionHead {
+                    padding: 41px 47px;
+                    h1 {
+                        font: normal normal bold 30px/34px Helvetica Now Text;
+                    }
+                }
+                .HomePageGridArea {
+                    padding: 25px;
+                    margin: 0;
+                    .divOuter {
+                        max-width: none;
+                        &:nth-child(2) {
+                            padding: 0;
+                        }
+                        .divInner {
+                            padding: 30px 27px;
+                            h2 {
+                                margin-top: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+            & + footer {
+                div {
+                    width: 100%;
+                    &.footerCenter {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .PlanPage {
+            .planPageHeader {
+                h1 {
+                    font: normal normal bold 23px/28px Acumin Pro;
+                }
+                .planRangeArea {
+                    display: block;
+                    .userSelect {
+                        display: block;
+                        text-align: center;
+                        padding: 0;
+                        ul {
+                            width: fit-content;
+                            margin: auto;
+                        }
+                    }
+                    .userSelectList {
+                        display: block;
+                        text-align: center;
+                        ul {
+                            width: fit-content;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            .planGridArea {
+                .planGridAreaOuter {
+                    width: 100%;
+                }
+            }
+            .comparePlanArea {
+                display: none;
+            }
+        }
+        footer {
+            margin-top: 0px;
+            div {
+                width: 100%;
+                text-align: center;
+                &.footerLeft {
+                    img {
+                        width: 128px;
+                    }
+                }
+                &.footerRight {
+                    order: 2;
+                    .chartBtn {
+                        display: none;
+                    }
+                }
+                &.footerCenter {
+                    order: 2;
+                }
+            }
+        }
+    }
+}
